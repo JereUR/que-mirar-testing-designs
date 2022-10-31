@@ -1,0 +1,83 @@
+.calification {
+  padding-left: 1rem;
+}
+
+.film-calification {
+  position: relative;
+  display: flex;
+}
+
+.film-container {
+  display: flex;
+  background-color: orangered;
+  border-radius: 0.5rem;
+}
+
+.film-section-1 {
+  position: relative;
+  display: flex;
+  margin: 1rem;
+}
+
+.film-section-2 {
+  position: relative;
+  display: flex;
+  width: 80%;
+}
+
+.film-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film-img {
+  width: 20vh;
+  margin: 0;
+  height: 100%;
+  padding-right: 1rem;
+}
+
+.film-index {
+  padding: 0 1rem 0 1rem;
+  width: 50px;
+  height: 50px;
+  /* centrado vertical */
+  position: relative;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.list-film {
+  display: block;
+}
+
+.film-title > a {
+  text-decoration: none;
+  background-color: beige;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.film-trailer {
+  position: relative;
+}
+
+.trailer {
+  position: relative;
+  top: 40%;
+  left: 150%;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+}
+
+.trailer > a {
+  text-decoration: none;
+}
+
+.imdb-logo {
+  width: 7vh;
+  border-radius: 0.5rem;
+}
