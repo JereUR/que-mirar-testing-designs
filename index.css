@@ -1,28 +1,41 @@
-.calification {
-  padding-left: 1rem;
+:root {
+  --main-color: #d35308;
+  --second-color: #d48d63;
+  --third-color: #ead0c0;
+  --words-color: rgb(58, 58, 58);
+  --header-words: rgb(235, 220, 220);
 }
 
-.film-calification {
-  position: relative;
-  display: flex;
+html {
+  background-color: #000;
 }
 
 .film-container {
   display: flex;
-  background-color: orangered;
-  border-radius: 0.5rem;
+  background-image: radial-gradient(
+    circle,
+    #ead0c0,
+    #e6bfa8,
+    #e0ae90,
+    #db9e79,
+    #d48d63
+  );
+  margin: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--words-color);
+  border: var(--third-color) 2px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 1rem;
 }
+
+/* Section 1 */
 
 .film-section-1 {
   position: relative;
   display: flex;
   margin: 1rem;
-}
-
-.film-section-2 {
-  position: relative;
-  display: flex;
-  width: 80%;
+  font-weight: 500;
 }
 
 .film-image {
@@ -32,30 +45,57 @@
 }
 
 .film-img {
-  width: 20vh;
-  margin: 0;
+  width: 15vh;
+  margin: 0.5rem;
   height: 100%;
   padding-right: 1rem;
 }
 
 .film-index {
   padding: 0 1rem 0 1rem;
-  width: 50px;
-  height: 50px;
-  /* centrado vertical */
   position: relative;
-  top: 50%;
+  top: 40%;
   margin-top: -25px;
+  margin-right: 1rem;
 }
 
-.list-film {
-  display: block;
+.film-index > p {
+  background-color: var(--words-color);
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--header-words);
+}
+
+/* Section 2 */
+
+.film-section-2 {
+  position: relative;
+  display: flex;
+  width: 80%;
+  font-weight: 500;
+}
+
+.calification {
+  padding-left: 1rem;
+}
+
+.film-calification {
+  position: relative;
+  display: flex;
+}
+
+.film-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--main-color);
 }
 
 .film-title > a {
+  font-size: 1rem;
   text-decoration: none;
-  background-color: beige;
-  margin: 1rem;
+  color: var(--header-words);
+  background-color: var(--words-color);
+  margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -71,13 +111,25 @@
   border-radius: 1rem;
   border: none;
   padding: 1rem;
+  margin-right: 2rem;
+  background-color: var(--words-color);
 }
 
 .trailer > a {
   text-decoration: none;
+  color: var(--header-words);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .imdb-logo {
-  width: 7vh;
+  width: 5vh;
+  height: 100%;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .film-trailer {
+    margin-right: 2rem;
+  }
 }
