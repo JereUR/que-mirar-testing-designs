@@ -12,18 +12,17 @@ html {
 
 .film-container {
   display: flex;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle,
     #ead0c0,
     #e6bfa8,
     #e0ae90,
     #db9e79,
     #d48d63
-  );
+  ); */
   margin: 0.5rem;
   font-family: "Poppins", sans-serif;
   color: var(--words-color);
-  border: var(--third-color) 2px solid;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 1rem;
@@ -45,25 +44,23 @@ html {
 }
 
 .film-img {
-  width: 15vh;
+  width: 20vh;
   margin: 0.5rem;
   height: 100%;
   padding-right: 1rem;
 }
 
 .film-index {
-  padding: 0 1rem 0 1rem;
-  position: relative;
-  top: 40%;
-  margin-top: -25px;
-  margin-right: 1rem;
+  position: absolute;
 }
 
 .film-index > p {
-  background-color: var(--words-color);
+  background-color: var(--main-color);
   padding: 1rem;
-  border-radius: 50%;
   color: var(--header-words);
+  margin: 0;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
 }
 
 /* Section 2 */
@@ -73,6 +70,7 @@ html {
   display: flex;
   width: 80%;
   font-weight: 500;
+  color: var(--second-color);
 }
 
 .calification {
@@ -94,7 +92,7 @@ html {
   font-size: 1rem;
   text-decoration: none;
   color: var(--header-words);
-  background-color: var(--words-color);
+  background-color: var(--main-color);
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -112,7 +110,7 @@ html {
   border: none;
   padding: 1rem;
   margin-right: 2rem;
-  background-color: var(--words-color);
+  background-color: var(--main-color);
 }
 
 .trailer > a {
